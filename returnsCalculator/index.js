@@ -7,23 +7,23 @@ let a = document.getElementById('a'),
 
 function calc() {
 
-        let newA = parseInt(a.value),
-            newN = parseInt(n.value),
-            newPRE = parseInt(pre.value),
-            preee = newPRE / 100,
-            r = ((newA * preee) + newA) / newA,
-            resualt = Math.pow(r, newN) * newA
-            endResualt = Math.round(resualt)
-    
+    let newA = parseInt(a.value),
+        newN = parseInt(n.value),
+        newPRE = parseInt(pre.value),
+        preee = newPRE / 100,
+        r = ((newA * preee) + newA) / newA,
+        resualt = Math.pow(r, newN) * newA
+    endResualt = Math.round(resualt)
+
     if (isNaN(endResualt)) {
-        console.log('wrong')
-    } else 
-    { show.innerHTML = endResualt.toLocaleString()
+        alert('Fill all inputs with realistic number, please')
+    } else {
+        show.innerHTML = endResualt.toLocaleString()
     }
 
-        
-            
-    
+
+
+
 }
 
 
