@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Annual Return</title>
+</head>
+<body>
+    <h2 class="text-center pt-5 pb-3">Annual Return Calculator</h2>
+
+    <div class="container pt-5 mt-4">
+        
+            <div class="form-group row pt-5 d-flex justify-content-around">
+                <label for="colFormLabelLg" class="col-xs-4   col-form-label col-form-label-lg">First Amount</label>
+                <div class="col-xs-7 w-50 input-div">
+                    <input type="number" class="form-control form-control-lg" id="a" placeholder="">
+                </div>
+            </div>
+
+            
+            <div class="form-group row pt-4 d-flex justify-content-around">
+                <label for="colFormLabelLg" class="col-xs-4 col-form-label col-form-label-lg">Years</label>
+                <div class="col-xs-7 w-50 input-div">
+                    <input type="number" class="form-control form-control-lg" id="n" placeholder="">
+                </div>
+            </div>
+
+        <div class="form-group row pt-4 d-flex justify-content-around">
+            <label  class="col-xs-4  col-form-label col-form-label-lg text-left" for="pre">Precentage</label>
+            <div class="input-group col-xs-7 w-50 input-div">
+                <input type="number" class=" form-control  form-control-lg" id="pre" placeholder="">
+                <div class="input-group-append col-xs-5">
+                    <div class="input-group-text">%</div>
+                </div>
+            </div>
+        </div>
+           
+
+
+            <div class=" result col-auto justify-content-center text-center w-75">
+                <button class="btn btn-primary mb-2 p-2" id="btn" onclick="calc()">Calculat</button>
+            </div>
+        
+        <h1 id="show" class="text-center">000,000.000</h1>
+        </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
